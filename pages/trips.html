@@ -16,9 +16,9 @@
         <div class="container-fluid">
 
             <!-- Logo -->
-        <a class="navbar-brand" href="#">
-            <img src="../assets/Logo Design-Harmony Voyages-02.svg" alt="Logo" height="74">
-        </a>
+            <div>
+              <img class="logo" src="../assets/Logo Design-Harmony Voyages-02.svg">
+            </div>
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -62,19 +62,19 @@
         </div>
         
   
-        <div class="col-6">
+        <div class="col-6"> 
           <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="singleDesFilter" autocomplete="off" value="single">
-            <label class="btn btn-outline-primary" for="btnradio1">Single destination</label>
+            <input type="radio" class="btn-check" name="filter2" id="singleDesFilter" autocomplete="off" value="single">
+            <label class="btn btn-outline-primary" for="singleDesFilter">Single destination</label>
           
-            <input type="radio" class="btn-check" name="btnradio" id="multiDesFilter" value="multi" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio2">Multi Destination</label>
+            <input type="radio" class="btn-check" name="filter2" id="multiDesFilter" value="multi" autocomplete="off">
+            <label class="btn btn-outline-primary" for="multiDesFilter">Multi Destination</label>
           
-            <input type="radio" class="btn-check" name="btnradio" id="roundTripFilter" value="returnOrigin" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio3">Round Trips</label>
+            <input type="radio" class="btn-check" name="filter2" id="roundTripFilter" value="origin" autocomplete="off">
+            <label class="btn btn-outline-primary" for="roundTripFilter">Round Trips</label>
     
-            <input type="radio" class="btn-check" name="btnradio" id="onSaleFilter" value="" autocomplete="off">
-            <label class="btn btn-outline-primary" for="btnradio3">Cheapest Trips</label>
+            <input type="radio" class="btn-check" name="filter" id="onSaleFilter" value="onSale" autocomplete="off">
+            <label class="btn btn-outline-primary" for="onSaleFilter">Cheapest Trips</label>
           </div>
         </div>
 
@@ -85,63 +85,87 @@
       <!-- Trips Container -->
       <div class="row cards" id="tripsContainer">
 
-        <!-- Trips Template -->
-        <template id="tripsListTemplate">
-          <div class="col-4">
-
-            <!-- Card -->
-          <div class="card" id="cardTrip" style="width: 21rem;">
-            <img src="../assets/Card 1.jpg" id="trips-image" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-title" id="tripsHeader">Tropical Rhythms Cruise Adventure</p>
-              <p class="card-text" id="description">Explore the stunning beauty of the Caribbean with stops in Cozumel, Grand Cayman, and Jamaica. Enjoy snorkeling in crystal-clear waters, visit ancient Mayan ruins, and savor the vibrant local culture.</p>
-              <div class="row">
-                <div class="col-6">
-                
-                </div>
-                <div class="col-6">
-                  <a class="learn-more" id="moreInfo">Learn More</a>
-                </div>
-              </div>
-            </div>
-
-            <div id="information">
-              <div class="subtitle">
-                <p>Duration:</p>
-              </div>
-              <p class="info" id="tripDuration">7 Days</p>
-
-              <div class="subtitle">
-                <p>Accommodation:</p>
-              </div>
-              <p class="info" id="tripAccom">Beds and..</p>
-
-              <div class="subtitle">
-                <p>Music Line-up:</p>
-              </div>
-              <p class="info" id="musicLineUp">bands, bands</p>
-
-              <div class="subtitle">
-                <p>Price:</p>
-              </div>
-              <p class="info" id="tripPrice">Price R0.00</p> 
-
-              <div class="subtitle">
-                <p>Trip Code</p>
-              </div>
-              <p class="info" id="tripCode">#246321</p> 
-            </div>
-             <div class="row">
-                <div class="col-6">
-                </div>
-                <button class="purchase-hidden" data-trip-id="${trip.tripCode}">Purchase Ticket</button>
-              </div>
-
-          </div>
-        </template>
-        </div>
-        
+      <!-- Trips Cards -->
       </div>
+
+       <!-- Trips Template -->
+       <template id="tripsListTemplate">
+        <div class="col-4">
+
+          <!-- Card -->
+        <div class="card" id="cardTrip" style="width: 21rem;">
+          <img src="../assets/Card 1.jpg" id="trips-image" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-title" id="tripsHeader">Tropical Rhythms Cruise Adventure</p>
+            <p class="card-text" id="description">Explore the stunning beauty of the Caribbean with stops in Cozumel, Grand Cayman, and Jamaica. Enjoy snorkeling in crystal-clear waters, visit ancient Mayan ruins, and savor the vibrant local culture.</p>
+            <div class="row">
+              <div class="col-6">
+              
+              </div>
+              <div class="col-6">
+                <a class="learn-more" id="moreInfo">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="information">
+            <div class="subtitle">
+              <p>Duration:</p>
+            </div>
+            <p class="info" id="tripDuration">7 Days</p>
+
+            <div class="subtitle">
+              <p>Accommodation:</p>
+            </div>
+            <p class="info" id="tripAccom">Beds and..</p>
+
+            <div class="subtitle">
+              <p>Music Line-up:</p>
+            </div>
+            <p class="info" id="musicLineUp">bands, bands</p>
+
+            <div class="subtitle">
+              <p>Price:</p>
+            </div>
+            <p class="info" id="tripPrice">Price R0.00</p> 
+
+            <div class="subtitle">
+              <p>Trip Code</p>
+            </div>
+            <p class="info" id="tripCode">#246321</p> 
+          </div>
+           <div class="row">
+              <div class="col-6">
+              </div>
+              <button class="purchase-hidden" onclick="tripCheckout()">Purchase Ticket</button>
+            </div>
+
+        </div>
+      </template>
+
+       <!-- ------------------------ -->
+    <!-- Footer -->
+    <footer>
+      <div class="row footer">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <img src="../assets/Logo Design-Harmony Voyages-white.svg" alt="Logo" height="74">
+        </div>
+        <div class="col-2">
+          
+        </div>
+        <div class="col-2 copyright">
+          <h5>Harmony Voyages</h5>
+          <p>HarmonVoyages©2023</p>
+        </div>
+        <div class="col-2">
+          
+        </div>
+        <div class="col-3 extra">
+          <p>About Us <br> Learn more</p>
+        </div>
+      </div>
+    </footer>
 
       <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

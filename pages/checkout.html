@@ -18,9 +18,9 @@
         <div class="container-fluid">
 
             <!-- Logo -->
-        <a class="navbar-brand" href="#">
-            <img src="../assets/Logo Design-Harmony Voyages-02.svg" alt="Logo" height="74">
-        </a>
+            <div>
+              <img class="logo" src="../assets/Logo Design-Harmony Voyages-02.svg">
+            </div>
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -40,16 +40,16 @@
 
       <div class="container checkout-header">
         <div class="row">
-          <div class="col align-self-left">
+          <div class="col-9 align-self-left">
             <h1>Selected Trips</h1>
           </div>
-          <div class="col total">
-            <h1>Total: R0.00</h1>
+          <div class="col-3 total">
+            <h1>Total: R6 897.00</h1>
           </div>
         </div>      
       </div> 
 
-      <table class="table">
+      <table  id="tripTable" class="table">
         <thead class="table-primary">
             <tr>
                 <th scope="col">Cruise</th>
@@ -60,15 +60,72 @@
                 <th scope="col"></th>
             </tr>
         </thead>
-        <tbody id="checkoutTable">
-        
+        <tbody id="">   
+          <tr>
+            <th scope="row">Tropical Rhythms Cruise Adventure</th>
+            <td>#232456</td>
+            <td>8 Days</td>
+            <td>x 1</td>
+            <td>R1,899</td>
+            <td>
+              <img class="remove-icon" src="../assets/remove.png" alt="Logo" height="30">
+            </td>
+          </tr>
         </tbody>
-    </table>
+        <tbody>   
+          <tr>
+            <th scope="row">Mediterranean Melodies</th>
+            <td>#232409</td>
+            <td>6 Days</td>
+            <td>x 1</td>
+            <td>R2,599</td>
+            <td>
+              <img class="remove-icon" src="../assets/remove.png" alt="Logo" height="30">
+            </td>
+          </tr>
+        </tbody>
+        <tbody>   
+          <tr>
+            <th scope="row">Northern Lights Serenade</th>
+            <td>#76585</td>
+            <td>4 Days</td>
+            <td>x 1</td>
+            <td>R2,399</td>
+            <td>
+              <img class="remove-icon" src="../assets/remove.png" alt="Logo" height="30">
+            </td>
+          </tr>
+        </tbody>
+      </table>
     
-    <div class="remove"><p>Remove All Trip Items</p></div>
-    <div id="totalPrice">Total: R0.00</div>
+    <div class="remove" onclick="removeAll()"><p>Remove All Trip Items</p></div>
+ 
     
-    <div class="checkout-button">Book Your Trips!</div>
+    <div class="checkout-button" onclick="showAlert()">Book Your Trips!</div>
+
+     <!-- ------------------------ -->
+    <!-- Footer -->
+    <footer>
+      <div class="row footer">
+        <div class="col-1"></div>
+        <div class="col-2">
+          <img src="../assets/Logo Design-Harmony Voyages-white.svg" alt="Logo" height="74">
+        </div>
+        <div class="col-2">
+          
+        </div>
+        <div class="col-2 copyright">
+          <h5>Harmony Voyages</h5>
+          <p>HarmonVoyages©2023</p>
+        </div>
+        <div class="col-2">
+          
+        </div>
+        <div class="col-3 extra">
+          <p>About Us <br> Learn more</p>
+        </div>
+      </div>
+    </footer>
 
       <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

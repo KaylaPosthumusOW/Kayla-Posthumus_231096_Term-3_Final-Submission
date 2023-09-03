@@ -12,7 +12,9 @@ const tripsArr = [
         music: "Reggae legends, calypso performers, and Caribbean DJs",
         price: "Starting from $1,899 per person",
         tripCode: "#232456",
-        tripDuration: "short",
+        tripDuration: "long",
+        
+        destination: "multi"
     },
     {
         header: "European Melodies River Cruise",
@@ -23,7 +25,9 @@ const tripsArr = [
         music: "Classical orchestras, local folk ensembles, and Mediterranean-inspired jazz",
         price: "Starting from $2,299 per person",
         tripCode: "#232456",
-        tripDuration: "short",
+        tripDuration: "long",
+        onSale: "true",
+        destination: "single"
     },
     {
         header: "Asian Beats Expedition",
@@ -34,7 +38,8 @@ const tripsArr = [
         music:  "K-Pop sensations, traditional Chinese ensembles, and modern Asian electronica",
         price: "Starting from $2,999 per person",
         tripCode: "#232456",
-        tripDuration: "long",
+        tripDuration: "short",
+        destination: "multi"
     },
     {
         header: "Caribbean Rhythms",
@@ -45,7 +50,9 @@ const tripsArr = [
         music: "Polynesian drum troupes, island reggae bands, and global fusion DJs",
         price: "Starting from $1,499 per person",
         tripCode: "#232456",
-        tripDuration: "long",
+        tripDuration: "short",
+        onSale: "true",
+        destination: "origin"
     },
     {
         header: "Mediterranean Melodies",
@@ -55,7 +62,10 @@ const tripsArr = [
         accommodation: "Modern cabins with Asian-inspired décor",
         music: "Ambient electronic artists, acoustic duos, and soothing instrumental performances",
         price: "Starting from $2,599 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "long",
+        onSale: "true",
+        destination: "multi"
     },
     {
         header: "Pacific Groove",
@@ -64,7 +74,9 @@ const tripsArr = [
         duration: "7 Days",
         music: "Tango orchestras, and Latin fusion bands", 
         price: "Starting from $1,999 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "long",
+        destination: "single"
     },
     {
         header: "Northern Lights Serenade",
@@ -74,7 +86,9 @@ const tripsArr = [
         accommodation: "Comfortable staterooms with Nordic influences",
         music: "Classical ensembles, Baltic folk musicians, and European electronic artists",
         price: "Starting from $2,399 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "short",
+        destination: "origin"
     },
     {
         header: "Asian Fusion Voyage",
@@ -84,7 +98,10 @@ const tripsArr = [
         accommodation: "Safari-themed suites with African motifs",
         music: "Afrobeat legends, Sahara desert blues, and rhythmic African drumming",
         price: "Starting from $2,799 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "long",
+        onSale: "true",
+        destination: "multi"
     },
     {
         header: "South American Samba",
@@ -94,7 +111,9 @@ const tripsArr = [
         accommodation: "Modern cabins with Australasian design touches",
         music: "Indigenous didgeridoo players, Maori traditional performances, and Australasian pop artists",
         price: "Starting from $3,199 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "short",
+        destination: "origin"
     },
     {
         header: "Baltic Symphony",
@@ -104,7 +123,10 @@ const tripsArr = [
         accommodation: "Art Deco-inspired cabins reminiscent of the jazz era",
         music: "Swing orchestras, jazz quartets, and vocal jazz sensations",
         price: "Starting from $1,799 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "short",
+        onSale: "true",
+        destination: "single"
     },
     {
         header: "African Beats Expedition",
@@ -114,7 +136,9 @@ const tripsArr = [
         accommodation: "Opulent suites with Middle Eastern flair",
         music: "Oud virtuosos, Middle Eastern fusion ensembles, and desert-inspired ambient sounds",
         price: "Starting from $2,199 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "long",
+        destination: "multi"
     },
     {
         header: "Australasia Harmony",
@@ -124,7 +148,10 @@ const tripsArr = [
         accommodation: "Bungalows and overwater villas in true Polynesian style",
         music: "Hula dancers, ukulele maestros, and Polynesian pop sensations",
         price: "Starting from $3,299 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "long",
+        onSale: "true",
+        destination: "origin"
     },
     {
         header: "Transatlantic Jazz Crossing",
@@ -134,17 +161,21 @@ const tripsArr = [
         accommodation: "Step into the elegance of our Art Deco-inspired cabins for 4 days of comfort and style.",
         music: "Immerse yourself in the soulful rhythms and swinging melodies of our onboard jazz program featuring world-renowned swing orchestras, jazz quartets, and vocal sensations.",
         price: "Starting from $1,799 per person, this cruise is your ticket to a timeless jazz experience.",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "short",
+        destination: "origin"
     },
     {
         header: "Arabian Nights Odyssey",
         description: "Explore the mystique of the Middle East, from the opulence of Dubai to the historic beauty of Petra. Our Arabian Nights-themed music festival showcases the rich cultural tapestry of the region.",
         image: "Card 14.jpg",
         duration: "7",
-        accommodation: "Eco-friendly cabins with panoramic rainforest views",
+        accommodation: "Eco-friendly cabins with panoramic rain forest views",
         music: "Indigenous Amazonian drumming, jungle-inspired electronic beats, and Latin American folklore",
         price: "Starting from $2,699 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "long",
+        destination: "single"
     },
     {
         header: "Norwegian Ford Serenade",
@@ -154,19 +185,34 @@ const tripsArr = [
         accommodation: "Cozy cabins with Scandinavian design elements",
         music: "Nordic folk musicians, classical performances with a Norwegian twist, and ambient electronic artists",
         price: "Starting from $2,099 per person",
-        tripCode: "#232456"
+        tripCode: "#232456",
+        tripDuration: "short",
+        onSale: "true",
+        destination: "origin"
     },
 ];
  
 let appliedFilter = "";
+let filterApplied = "";
 const selectedTrips = [];
+
+// ---------------------
+// When homepage loads in
+// ---------------------
+document.addEventListener("DOMContentLoaded", function () {
+    var h1Element = document.getElementById("LoadIn");
+    h1Element.textContent = "Welcome to Harmony Voyages";
+});
+
+// --------------------
 // Browse Trips
+// -----------------------------
  
 $(document).ready(function(){
  
     console.log(tripsArr);
     loadTrips(tripsArr);
-    filterTrips();
+  
 });
 
 // ---------------------
@@ -198,27 +244,26 @@ $(document).ready(function() {
     $(".weather").empty().append(templateContents);
   }
  
-// filterTrips();
- 
 // ---------------------------------------------
 // Load Trips
 // ---------------------------------------------
  
-
 function loadTrips(tripsShow) {
  
     console.log(tripsShow);
  
- 
+    // Clear Cards in Arr
+    $("#tripsContainer").empty();
+
+    // loop Through Trips
     for (let i = 0; i < tripsShow.length; i++) {
         const trips = tripsShow[i];
         
- 
         console.log(trips);
  
         $("#tripsContainer").append($("#tripsListTemplate").html());
  
-        let currentChild = $("#tripsContainer").children().eq(i+1);
+        let currentChild = $("#tripsContainer").children().eq(i);
  
         $(currentChild).find("#tripsHeader").text(trips.header);
         $(currentChild).find("#description").text(trips.description);
@@ -228,8 +273,7 @@ function loadTrips(tripsShow) {
         $(currentChild).find("#musicLineUp").text(trips.music);
         $(currentChild).find("#tripPrice").text(trips.price);
         $(currentChild).find("#tripCode").text(trips.tripCode);
- 
- 
+  
         // Hide info
         $(currentChild).find("#information").hide();
         $(currentChild).find("#tripDuration").hide();
@@ -241,59 +285,60 @@ function loadTrips(tripsShow) {
     }
 };
 
-// ----------------------
-// Filter Radio Buttons
+// ------------------------------------
+// When a filter is clicked
+// ----------------------------------
 
-// $("input[name='filter']").click(function(){
-//     appliedFilter = $(this).attr('id');
+$("input[name='filter']").click(function() {
 
-//     console.log(appliedFilter)
-//    filterTrips();
-// });
+    appliedFilter = $(this).attr('value')
 
-// function filterTrips() {
+    console.log(appliedFilter);
+    filterTrips();
+});
 
-//     let filteredTripsArr = [];
+$("input[name='filter2']").click(function() {
 
-    
+    filterApplied = $(this).attr('value')
 
-//             let filterArrTrips = [];
-         
-//             if (appliedFilter) {
-//                 if (appliedFilter === "shortTrip") {
-//                     filterArrTrips = tripsArr.filter(trips => trips.tripDuration === "short"); 
-//                 } else if (appliedFilter === "longTrip") {
-//                     filterArrTrips = tripsArr.filter(trips => trips.tripDuration === "long"); 
-//                 }
-//             }
-                
-//         loadTrips(filteredTripsArr)
-// };
+    console.log(filterApplied);
+    tripsFilter();
+});
 
-    
+    function filterTrips() {
 
-//     console.log(appliedFilter);
+        let filteredTripsArr = [];
 
-//     //Filter Trips
-//     if (appliedFilter === "onSale") {
-//         filteredSortedArrPlants = arrPlants.filter(plant => plant.onSale == "true");
+        // Filter 1
+       
+        if (appliedFilter) {
+            if (appliedFilter === "onSale") {
+                filteredTripsArr = tripsArr.filter(trips => trips.onSale == "true");
+            } else {
+                filteredTripsArr = tripsArr.filter(trips => trips.tripDuration == appliedFilter)
+            }
+          } else {
+            filteredTripsArr = tripsArr;
+          }
 
-//     filteredTripsArr = tripsArr.filter(function(trips) {
-//         return trips.duration > 5;
-//     }) 
+          loadTrips(filteredTripsArr);
+        
+         };
 
-//     loadTrips(filteredTripsArr);
-// };
+        //  Filter 2
+    function tripsFilter() {
 
-// --------------------
-// When button is clicked
+        let secFilteredArr = [];
+        if(filterApplied) {
+            secFilteredArr = tripsArr.filter(trips => trips.destination == filterApplied)
+        }
 
+        loadTrips(secFilteredArr)
+    };
 
-
-
-
-
-
+// -----------------------------------------------------
+// When card is clicked
+// -----------------------------------------------------
 
 $("#tripsContainer").on('click', '.card', function(){
 
@@ -314,144 +359,66 @@ $("#tripsContainer").on('click', '.card', function(){
 });
 
 
+// -----------------------------------------------
+// When Purchase button is clicked
+// -----------------------------------------------
 
+let tripOrder = [];
 
+tripCheckout = (tripsShow) => {
 
+    loadTrips(tripsShow)
+    for (let i = 0; i < tripsShow.length; i++) {
+        const trips = tripsShow[i];
+         
+    let currentChild = $("#tripsContainer").children().eq(i);
 
-// Filter clicked
-// $("input[name='filter']").click(function(){
-//     appliedFilter = $(this).attr('value');
- 
-//     console.log(appliedFilter);
-//     filterTrips();
-// });
- 
-// function filterTrips(){
- 
-//     let  filterArrTrips = [];
- 
-//     if(appliedFilter) {
-//         if (appliedFilter === "short"){
-//             filterArrTrips = tripsArr.filter(trips => trips.duration == 5)
-//         }
-//     }
-// }
- 
-// $("input[name='filter']").click(function () {
-//     appliedFilter = $(this).attr('value');
- 
-//     console.log(appliedFilter);
-//     filterTrips(tripsArr);
-// });
- 
-// function filterTrips() {
-//     let filterArrTrips = [];
- 
-//     if (appliedFilter) {
-//         if (appliedFilter === "shortTrip") {
-//             filterArrTrips = tripsArr.filter(trips => trips.duration < 5); 
-//         } else if (appliedFilter === "longTrip") {
-//             filterArrTrips = tripsArr.filter(trips => trips.duration >= 5); 
-//         }
-//     }
-// };
- 
-//  console.log(filterArrTrips);
-//  loadTrips(filterArrTrips);
+    let tripName = $(currentChild).find("#tripsHeader").text(trips.header); 
+    let code = $(currentChild).find("#tripCode").text(trips.tripCode);
+    let duration = $(currentChild).find("#tripDuration").text(trips.duration);
+    let cost = $(currentChild).find("#tripPrice").text(trips.price);
 
-
-$(document).ready(function () {
-
-    //local storage
-    const selectedTrips = JSON.parse(localStorage.getItem("selectedTrips")) || [];
-    //
-    const selectedTrips = [];
-
-    function updateTotalPrice() {
-        let totalPrice = 0;
-        selectedTrips.forEach((trip) => {
-            totalPrice += trip.quantity * parseFloat(trip.price);
-        });
-
-        $("#totalPrice").text(`Total: R${totalPrice.toFixed(2)}`);
-    }
-
-    function addTripToCart(trip) {
-    
-        const existingTrip = selectedTrips.find((item) => item.tripCode === trip.tripCode);
-        if (existingTrip) {
-            existingTrip.quantity++;
-        } else {
-          
-            selectedTrips.push({ ...trip, quantity: 1 });
-        }
-
-        updateCheckoutTable();
-        updateTotalPrice();
-    }
-
-    function updateCheckoutTable() {
-        const tableBody = $("#checkoutTable");
-        tableBody.empty();
-
-        selectedTrips.forEach((trip) => {
-            const row = $("<tr>");
-            row.append(`<td>${trip.header}</td>`);
-            row.append(`<td>${trip.tripCode}</td>`);
-            row.append(`<td>${trip.duration}</td>`);
-            row.append(`<td>${trip.quantity}</td>`);
-            row.append(`<td>R${(trip.quantity * parseFloat(trip.price)).toFixed(2)}</td>`);
-            const removeButton = $(`<td><button class="remove-item" data-trip-code="${trip.tripCode}">Remove</button></td>`);
-            row.append(removeButton);
-            tableBody.append(row);
-        });
-
-        $(".remove-item").click(function () {
-            const tripCodeToRemove = $(this).data("trip-code");
-            const indexToRemove = selectedTrips.findIndex((trip) => trip.tripCode === tripCodeToRemove);
-            if (indexToRemove !== -1) {
-                selectedTrips.splice(indexToRemove, 1);
-                updateCheckoutTable();
-                updateTotalPrice();
-            }
-        });
-    }
-    //local storage
-    function saveSelectedTripsToLocalStorage() {
-        localStorage.setItem("selectedTrips", JSON.stringify(selectedTrips));
-    }
- 
-    $(".checkout-button").click(function () {
-        console.log("Selected trips:", selectedTrips);
+    tripOrder.push({
+        tripName: tripName,
+        code: code,
+        duration: duration,
+        cost: cost
     });
 
+    console.log(tripOrder)
+    };
 
-    $(".remove").click(function () {
-        selectedTrips.length = 0;
-        updateCheckoutTable();
-        updateTotalPrice();
-        saveSelectedTripsToLocalStorage();
+    let data = JSON.stringify(tripOrder);
+    localStorage.setItem('order', data);
+
+};
+
+  // --------------------------------------------------
+  // Remove Button
+  // --------------------------------------------------
+
+  $(document).ready(function() {
+    // Handle click event on the remove icons
+    $(".remove-icon").on("click", function() {
+      // Find the closest parent <tr> element and remove it
+      $(this).closest("tr").remove();
     });
+  });
 
-    $("#tripsContainer").on("click", ".purchase-hidden", function () {
-        const tripCode = $(this).data("trip-id");
-        const selectedTrip = tripsArr.find((trip) => trip.tripCode === tripCode);
-        if (selectedTrip) {
-            addTripToCart(selectedTrip);
-        }
-        saveSelectedTripsToLocalStorage();
-    });
-
-
-    if (selectedTrips.length > 0) {
-        updateCheckoutTable();
-        updateTotalPrice();
+// Remove all tbody
+  function removeAll() {
+    // Get the table element by its id
+    var table = document.getElementById("tripTable");
+  
+    // Remove all the <tbody> elements within the table
+    var tbodyElements = table.getElementsByTagName("tbody");
+    for (var i = tbodyElements.length - 1; i >= 0; i--) {
+      table.removeChild(tbodyElements[i]);
     }
-});
+  };
 
-
-
-
-
-
- 
+//   click Book Tickets btn
+function showAlert() {
+    alert("Thank you for booking your trips!");
+  };
+  

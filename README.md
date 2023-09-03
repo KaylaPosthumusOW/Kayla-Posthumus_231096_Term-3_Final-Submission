@@ -28,9 +28,13 @@ At Harmony Voyages, I believe in the extraordinary power of harmony — not just
 
 ![HomePage](/assets/Homepage%20-%20Mockup.jpg)
 
-### Browse Plants
+### Browse Trips
 
-![EvergreenLogo](/assets/Trips%20Page%20-%20Mock%20Up.png)
+![TripsPage](/assets/Trips%20Page%20-%20Mock%20Up.png)
+
+### Checkout
+
+![CheckoutPage](/assets/Checkout%20Page.png)
 
 ## Getting Started
 
@@ -63,12 +67,12 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Authors
+## Author
 
-* **Paul Loots** - *Javascript & HTML* - [PaulLoots](https://github.com/PaulLoots)
-* **Carlo Kuyper** - *Open Weather API* - [CarloOpenWindow](https://github.com/CarloOpenWindow)
+* **Kayla Posthumus** - *Javascript, HTML, CSS & Weather API* - [KaylaPosthumus](https://github.com/KaylaPosthumusOW)
 
-See also the list of [contributors](https://github.com/paulowi/DV100-T3-Class-Project-Test/graphs/contributors) who participated in this project.
+
+See also the list of [contributors](https://github.com/KaylaPosthumusOW/Kayla-Posthumus_231096_Term-3_Final-Submission/graphs/contributors) who participated in this project.
 
 ## License
 
@@ -76,6 +80,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgements
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Thank you Paul Loots for you very insightful test project that taught my the uses of JQuery and javascript
+* Thank you Carlo Kuyper for teaching us about implementing our first Weather API
+* Wynand de Beer, for all you help fixing my code
+* Nicola Prinsloo, for working together to be able to submit in time.
+
+## Plagiarism Declaration
+![KaylaPosthumus_Plagiarism Note](assets/KaylaPosthumus_PLAGIARISM%20DECLARATION.png)
+

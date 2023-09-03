@@ -58,6 +58,7 @@ p{
 .purchase-hidden{
     display: inline-flex;
     height: 40px;
+    width: 150px;
     padding: 0px 10px;
     justify-content: center;
     align-items: center;
@@ -87,7 +88,11 @@ p{
     background-size: cover;
     background-position: center;
     width: auto;
-    height: 50px;
+    height: 70px;
+}
+
+.logo:hover{
+    background-image: url(../assets/Logo\ Design-Harmony\ Voyages-white.svg);
 }
 
 .navbar-nav{
@@ -259,6 +264,15 @@ margin-bottom: 100px;
     margin-top: 5px;
 }
 
+.remove p{
+    color:#040b17;
+}
+
+.remove:hover{
+    color:#0D1F40;
+    cursor: pointer;
+}
+
 .checkout-button{
     display: flex;
     width: 200px;
@@ -279,6 +293,12 @@ margin-bottom: 100px;
     line-height: 15px; /* 56.25% */
     margin-left: 80%;
     margin-top: 50px;
+}
+
+.checkout-button:hover{
+    border: 2px solid #C332EE;
+    background: #e18ff9;
+    cursor: pointer;
 }
 
 .remove-icon{
@@ -325,6 +345,7 @@ margin-bottom: 100px;
 }
 
 .card-text{
+    color: #0D1F40;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
@@ -334,31 +355,49 @@ margin-bottom: 100px;
 
 .subtitle p{
     margin-left: 15px;
+    color: #0D1F40;
 }
 
 .info{
     font-family: 'Josefin Sans', sans-serif;
+    color: #0D1F40;
     font-weight: 300;
     margin-top: -14px;
     margin-left: 20px;
 }
 
 /* Weather */
-.weather{
+.weatherBlock{
     background-color: #1985FF;
-    width: 40%;
-    height: 115px;
+    width: 60%;
+    height: 200px;
     border-radius: 30px;
     margin: 0 auto;
     margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-bottom: 90px;
 }
 
 .sun{
     width: auto;
-    height: 110px;
+    height: 170px;
     margin-top: -20px;
     margin-left: -30px;
+}
+
+.sunny{
+    text-align: center;
+    padding-top: 60px;
+    padding-left: -50px;
+}
+.sunny h3{
+    color: white;
+}
+
+.temp{
+    padding-top: 50px;
+}
+.temp h1{
+    color: white;
 }
 
 /* quote */
@@ -369,25 +408,22 @@ margin-bottom: 100px;
 
 /* Footer */
 footer{
+    margin-top: 100px;
     background-color: #0D1F40;
     color: white;
+}
+
+.extra p{
+    color: white;
+    margin-top: 10px;
+}
+
+.copyright h5,p{
+    color: white;
+    margin-top: 10px;
 }
 
 /* Checkout Page */
 .checkout-header{
     margin-top: 150px;
 }
-
-.total{
-    margin-left: 60%;
-}
-
-
-
-
-
-
-
-
-
-
