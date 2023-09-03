@@ -189,6 +189,7 @@ p{
     font-size: 20px;
     margin-top: 40px;
     margin-left: 100px;
+    color:#040b17;
 }
 
 /* Slide 3 */
@@ -219,6 +220,10 @@ p{
     margin-top: 300px;
 }
 
+.slide-3 p{
+    color:#040b17;
+}
+
 /* Button Group */
 
 .radios{
@@ -245,6 +250,10 @@ margin-bottom: 100px;
 .accordion-button{
     background-color: #0D1F40;
     color: white;
+}
+
+.accordion-body p{
+    color:#040b17;
 }
 
 /* Table */

@@ -5,7 +5,7 @@ Final Submission - Harmony Voyages Cruise Boat Website Design - Kayla Posthumus
 
 This is my Term 3 DV100 project where I learned about more advanced Jquery and javascript and how to apply it in our cruise line website. I had to design my own brand, logo and website pages and then apply Jquery and and javascript to make a functioning trips and checkout page.
 
-[Watch the demo »]()
+[Watch the demo »](https://www.loom.com/share/0ab0a924b34e4e19ac6a3808e4626308?sid=b713bab3-e15d-4825-aecf-f67091d62e5c)
 
 ## Table of Contents
 
