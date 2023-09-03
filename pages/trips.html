@@ -46,13 +46,40 @@
       <!-- ---------------------------------------------- -->
       <!-- Filter Radio -->
 
-      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-        <input type="radio" class="btn-check" name="filter" id="shortTrip" value="shortTrip" autocomplete="off" >
-        <label class="btn btn-outline-primary" for="shortTrip">Short Duration Trips</label>
-      
-        <input type="radio" class="btn-check" name="filter" id="longTrip" value="longTrip" autocomplete="off">
-        <label class="btn btn-outline-primary" for="longTrip">Long duration trips</label>
+      <div class="row radios">
+
+        <div class="col-4">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="filter" id="allTrips" autocomplete="off" value="" checked>
+            <label class="btn btn-outline-primary" for="allTrips">All Trips</label>
+    
+            <input type="radio" class="btn-check" name="filter" id="shortTrip" value="short" autocomplete="off" >
+            <label class="btn btn-outline-primary" for="shortTrip">Short Duration Trips</label>
+          
+            <input type="radio" class="btn-check" name="filter" id="longTrip" value="long" autocomplete="off">
+            <label class="btn btn-outline-primary" for="longTrip">Long duration trips</label>
+          </div>
+        </div>
+        
+  
+        <div class="col-6">
+          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="singleDesFilter" autocomplete="off" value="single">
+            <label class="btn btn-outline-primary" for="btnradio1">Single destination</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="multiDesFilter" value="multi" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">Multi Destination</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="roundTripFilter" value="returnOrigin" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Round Trips</label>
+    
+            <input type="radio" class="btn-check" name="btnradio" id="onSaleFilter" value="" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3">Cheapest Trips</label>
+          </div>
+        </div>
+
       </div>
+     
 
 
       <!-- Trips Container -->
@@ -63,20 +90,53 @@
           <div class="col-4">
 
             <!-- Card -->
-          <div class="card" style="width: 21rem;">
+          <div class="card" id="cardTrip" style="width: 21rem;">
             <img src="../assets/Card 1.jpg" id="trips-image" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-title" id="tripsHeader">Tropical Rhythms Cruise Adventure</p>
               <p class="card-text" id="description">Explore the stunning beauty of the Caribbean with stops in Cozumel, Grand Cayman, and Jamaica. Enjoy snorkeling in crystal-clear waters, visit ancient Mayan ruins, and savor the vibrant local culture.</p>
               <div class="row">
                 <div class="col-6">
-                  <a href="#" class="purchase-hidden">Purchase ticket</a>
+                
                 </div>
                 <div class="col-6">
-                  <a href="#" class="learn-more">Learn More</a>
+                  <a class="learn-more" id="moreInfo">Learn More</a>
                 </div>
               </div>
             </div>
+
+            <div id="information">
+              <div class="subtitle">
+                <p>Duration:</p>
+              </div>
+              <p class="info" id="tripDuration">7 Days</p>
+
+              <div class="subtitle">
+                <p>Accommodation:</p>
+              </div>
+              <p class="info" id="tripAccom">Beds and..</p>
+
+              <div class="subtitle">
+                <p>Music Line-up:</p>
+              </div>
+              <p class="info" id="musicLineUp">bands, bands</p>
+
+              <div class="subtitle">
+                <p>Price:</p>
+              </div>
+              <p class="info" id="tripPrice">Price R0.00</p> 
+
+              <div class="subtitle">
+                <p>Trip Code</p>
+              </div>
+              <p class="info" id="tripCode">#246321</p> 
+            </div>
+             <div class="row">
+                <div class="col-6">
+                </div>
+                <button class="purchase-hidden" data-trip-id="${trip.tripCode}">Purchase Ticket</button>
+              </div>
+
           </div>
         </template>
         </div>
